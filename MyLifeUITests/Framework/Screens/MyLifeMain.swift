@@ -21,6 +21,8 @@ class MyLifeMain: ScreenBase {
         switch screen {
         case is AddNewPerson:
             tapAddButton()
+        case is PersonDetails:
+            selectPerson(atIndex: 0)
         default:
             break
         }
@@ -38,5 +40,9 @@ class MyLifeMain: ScreenBase {
 
     func selectPerson(name: String) {
         app.tables.cells.staticTexts[name].validateAndTap()
+    }
+
+    func selectPerson(atIndex: Int) {
+        app.tables.cells.element(boundBy: atIndex).validateAndTap()
     }
 }

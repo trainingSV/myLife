@@ -11,4 +11,5 @@ import Foundation
 class Screens {
     let home = MyLifeMain()
     let addNewPerson = AddNewPerson()
+    let personDetails = PersonDetails()
 }

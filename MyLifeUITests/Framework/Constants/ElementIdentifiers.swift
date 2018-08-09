@@ -14,4 +14,5 @@ class ElementIdentifiers {
     static let Done = "Done"
     static let MyLife = "My Life"
     static let Add = "Add"
+    static let Delete = "delete"
 }

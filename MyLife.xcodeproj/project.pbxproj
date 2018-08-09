@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92CB601420FCC976001C4DE7 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CB601320FCC976001C4DE7 /* GlobalVariables.swift */; };
+		92E27049211C744000366A55 /* PersonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E27048211C744000366A55 /* PersonDetails.swift */; };
 		92E32A692073CE820013ACFF /* TestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E32A682073CE820013ACFF /* TestBase.swift */; };
 		92E32A772073D2360013ACFF /* FrameworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E32A762073D2360013ACFF /* FrameworkConstants.swift */; };
 		92E32A792073D2490013ACFF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E32A782073D2490013ACFF /* AppConstants.swift */; };
@@ -41,6 +42,7 @@
 		92BB173A206D10C700707F4E /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92BB173E206D10C800707F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92CB601320FCC976001C4DE7 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		92E27048211C744000366A55 /* PersonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetails.swift; sourceTree = "<group>"; };
 		92E32A682073CE820013ACFF /* TestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBase.swift; sourceTree = "<group>"; };
 		92E32A762073D2360013ACFF /* FrameworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkConstants.swift; sourceTree = "<group>"; };
 		92E32A782073D2490013ACFF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				92E32A7C2073D2EE0013ACFF /* ScreenBase.swift */,
 				92E32A7E2073D55F0013ACFF /* MyLifeMain.swift */,
 				92E32A802073D6810013ACFF /* AddNewPerson.swift */,
+				92E27048211C744000366A55 /* PersonDetails.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				92E32A7F2073D55F0013ACFF /* MyLifeMain.swift in Sources */,
 				92EB0A8D20FE14B400A93D7B /* XCUIElementExtensions.swift in Sources */,
 				92E32A812073D6810013ACFF /* AddNewPerson.swift in Sources */,
+				92E27049211C744000366A55 /* PersonDetails.swift in Sources */,
 				92E32A692073CE820013ACFF /* TestBase.swift in Sources */,
 				92E32A772073D2360013ACFF /* FrameworkConstants.swift in Sources */,
 			);
