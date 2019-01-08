@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E25FA5121E4D0760037135E /* MyLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E25FA5021E4D0760037135E /* MyLifeUITests.swift */; };
 		FA13E2D81CBEBB4F00CB0073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13E2D71CBEBB4F00CB0073 /* AppDelegate.swift */; };
 		FA13E2DD1CBEBB4F00CB0073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA13E2DB1CBEBB4F00CB0073 /* Main.storyboard */; };
 		FA13E2DF1CBEBB4F00CB0073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA13E2DE1CBEBB4F00CB0073 /* Assets.xcassets */; };
@@ -17,7 +18,20 @@
 		FAECF3151CFAA18A008C4EE0 /* README.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAECF3141CFAA18A008C4EE0 /* README.pdf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4E25FA5321E4D0760037135E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA13E2CC1CBEBB4F00CB0073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA13E2D31CBEBB4F00CB0073;
+			remoteInfo = MyLife;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4E25FA4E21E4D0760037135E /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E25FA5021E4D0760037135E /* MyLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLifeUITests.swift; sourceTree = "<group>"; };
+		4E25FA5221E4D0760037135E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA13E2D41CBEBB4F00CB0073 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA13E2D71CBEBB4F00CB0073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA13E2DC1CBEBB4F00CB0073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E25FA4B21E4D0760037135E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA13E2D11CBEBB4F00CB0073 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,11 +62,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E25FA4F21E4D0760037135E /* MyLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E25FA5021E4D0760037135E /* MyLifeUITests.swift */,
+				4E25FA5221E4D0760037135E /* Info.plist */,
+			);
+			path = MyLifeUITests;
+			sourceTree = "<group>";
+		};
 		FA13E2CB1CBEBB4F00CB0073 = {
 			isa = PBXGroup;
 			children = (
 				FAECF3141CFAA18A008C4EE0 /* README.pdf */,
 				FA13E2D61CBEBB4F00CB0073 /* MyLife */,
+				4E25FA4F21E4D0760037135E /* MyLifeUITests */,
 				FA13E2D51CBEBB4F00CB0073 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				FA13E2D41CBEBB4F00CB0073 /* MyLife.app */,
+				4E25FA4E21E4D0760037135E /* MyLifeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +116,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4E25FA4D21E4D0760037135E /* MyLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E25FA5721E4D0760037135E /* Build configuration list for PBXNativeTarget "MyLifeUITests" */;
+			buildPhases = (
+				4E25FA4A21E4D0760037135E /* Sources */,
+				4E25FA4B21E4D0760037135E /* Frameworks */,
+				4E25FA4C21E4D0760037135E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E25FA5421E4D0760037135E /* PBXTargetDependency */,
+			);
+			name = MyLifeUITests;
+			productName = MyLifeUITests;
+			productReference = 4E25FA4E21E4D0760037135E /* MyLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FA13E2D31CBEBB4F00CB0073 /* MyLife */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA13E2E61CBEBB4F00CB0073 /* Build configuration list for PBXNativeTarget "MyLife" */;
@@ -107,10 +157,15 @@
 		FA13E2CC1CBEBB4F00CB0073 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Apple Inc.";
 				TargetAttributes = {
+					4E25FA4D21E4D0760037135E = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA13E2D31CBEBB4F00CB0073;
+					};
 					FA13E2D31CBEBB4F00CB0073 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0800;
@@ -133,11 +188,19 @@
 			projectRoot = "";
 			targets = (
 				FA13E2D31CBEBB4F00CB0073 /* MyLife */,
+				4E25FA4D21E4D0760037135E /* MyLifeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E25FA4C21E4D0760037135E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA13E2D21CBEBB4F00CB0073 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +215,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E25FA4A21E4D0760037135E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E25FA5121E4D0760037135E /* MyLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA13E2D01CBEBB4F00CB0073 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +235,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E25FA5421E4D0760037135E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA13E2D31CBEBB4F00CB0073 /* MyLife */;
+			targetProxy = 4E25FA5321E4D0760037135E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA13E2DB1CBEBB4F00CB0073 /* Main.storyboard */ = {
@@ -185,6 +264,75 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4E25FA5521E4D0760037135E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyLifeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softvision.lister-app.MyLifeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyLife;
+			};
+			name = Debug;
+		};
+		4E25FA5621E4D0760037135E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyLifeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softvision.lister-app.MyLifeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyLife;
+			};
+			name = Release;
+		};
 		FA13E2E41CBEBB4F00CB0073 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -306,6 +454,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E25FA5721E4D0760037135E /* Build configuration list for PBXNativeTarget "MyLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E25FA5521E4D0760037135E /* Debug */,
+				4E25FA5621E4D0760037135E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FA13E2CF1CBEBB4F00CB0073 /* Build configuration list for PBXProject "MyLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
