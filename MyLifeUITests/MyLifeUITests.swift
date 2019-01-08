@@ -69,19 +69,4 @@ class MyLifeUITests: XCTestCase {
     XCTAssertTrue(navigationBar.waitForExistence(timeout: 2), "The Home Screen has not been reached")
     XCTAssertTrue(tableView.staticTexts[newName].waitForExistence(timeout: 2), "Name has not been updated")
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
