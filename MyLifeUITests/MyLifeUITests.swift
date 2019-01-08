@@ -28,39 +28,35 @@ class MyLifeUITests: XCTestCase {
         app.terminate()
     }
 
-    func testExample1() {
+    func testAddNewPerson() {
+    let navigationBar = app.navigationBars["My Life"]
+    let personNavigationBar = app.navigationBars["MyLife.PersonView"]
+    let tableView = app.tables
+    let nameTextField = tableView.textFields["Name"]
+    let name = "New User"
 
-        let NavigationBar = app.navigationBars["My Life"]
-        let PersonNavigationBar = app.navigationBars["MyLife.PersonView"]
-        let tables = app.tables
-        let nameTextField = tables.textFields["Name"]
-        let name = "New User"
+    // Tap on Add a new person
+    navigationBar.buttons["Add"].tap()
+    XCTAssertTrue(nameTextField.waitForExistence(timeout: 2), "The Add New Person Screen has not been reached")
 
-        // Tap on Add a new person
-        NavigationBar.buttons["Add"].tap()
-        XCTAssertTrue(nameTextField.exists, "Wrong screen buddy")
+    // Tape on "Name" field
+    nameTextField.tap()
+    nameTextField.typeText(name)
 
-        // Tape on "Name" field
-        nameTextField.tap()
-        nameTextField.typeText(name)
+    // Tap on "Done" button and verify person has been added
+    personNavigationBar.buttons["Done"].tap()
+    XCTAssertTrue(navigationBar.waitForExistence(timeout: 2), "The Home Screen has not been reached")
+    XCTAssertTrue(tableView.staticTexts[name].waitForExistence(timeout: 2), "New Person not added")
+    }
 
-        // Tap on "Done" button and verify person has been added
-        PersonNavigationBar.buttons["Done"].tap()
-        XCTAssertTrue(NavigationBar.exists, "Wrong screen buddy")
-        XCTAssertTrue(tables.staticTexts[name].exists,"New Person not added")
-
-}
-
-    func testExample2() {
-
-    let NavigationBar = app.navigationBars["My Life"]
-    let tables = app.tables
-    let nameTextField = tables.textFields.firstMatch
+    func testUpdatePersonName() {
+    let navigationBar = app.navigationBars["My Life"]
+    let tableView = app.tables
+    let nameTextField = tableView.textFields.firstMatch
     let newName = "Updated Name"
 
     // Select a person
-
-    tables.staticTexts.element(boundBy: 0).tap()
+    tableView.staticTexts.element(boundBy: 0).tap()
 
     // Tape on "Name" field and update name
     nameTextField.tap()
@@ -68,13 +64,11 @@ class MyLifeUITests: XCTestCase {
     deleteKey.press(forDuration: 3)
     nameTextField.typeText(newName)
 
-    // Tap on "Done" button and verify person has been added
-
-    NavigationBar.buttons["Done"].tap()
-    XCTAssertTrue(NavigationBar.exists, "Wrong screen buddy")
-    XCTAssertTrue(tables.staticTexts[newName].exists,"Name not updated")
-
-}
+    // Tap on "Done" button and verify person with updated name is present
+    navigationBar.buttons["Done"].tap()
+    XCTAssertTrue(navigationBar.waitForExistence(timeout: 2), "The Home Screen has not been reached")
+    XCTAssertTrue(tableView.staticTexts[newName].waitForExistence(timeout: 2), "Name has not been updated")
+    }
 
 }
 
