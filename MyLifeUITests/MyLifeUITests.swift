@@ -29,44 +29,44 @@ class MyLifeUITests: XCTestCase {
     }
 
     func testAddNewPerson() {
-    let navigationBar = app.navigationBars["My Life"]
-    let personNavigationBar = app.navigationBars["MyLife.PersonView"]
-    let tableView = app.tables
-    let nameTextField = tableView.textFields["Name"]
-    let name = "New User"
+        let navigationBar = app.navigationBars["My Life"]
+        let personNavigationBar = app.navigationBars["MyLife.PersonView"]
+        let tableView = app.tables
+        let nameTextField = tableView.textFields["Name"]
+        let name = "New User"
 
-    // Tap on Add a new person
-    navigationBar.buttons["Add"].tap()
-    XCTAssertTrue(nameTextField.waitForExistence(timeout: 2), "The Add New Person Screen has not been reached")
+        // Tap on Add a new person
+        navigationBar.buttons["Add"].tap()
+        XCTAssertTrue(nameTextField.waitForExistence(timeout: 2), "The Add New Person Screen has not been reached")
 
-    // Tape on "Name" field
-    nameTextField.tap()
-    nameTextField.typeText(name)
+        // Tape on "Name" field
+        nameTextField.tap()
+        nameTextField.typeText(name)
 
-    // Tap on "Done" button and verify person has been added
-    personNavigationBar.buttons["Done"].tap()
-    XCTAssertTrue(navigationBar.waitForExistence(timeout: 2), "The Home Screen has not been reached")
-    XCTAssertTrue(tableView.staticTexts[name].waitForExistence(timeout: 2), "New Person not added")
+        // Tap on "Done" button and verify person has been added
+        personNavigationBar.buttons["Done"].tap()
+        XCTAssertTrue(navigationBar.waitForExistence(timeout: 2), "The Home Screen has not been reached")
+        XCTAssertTrue(tableView.staticTexts[name].waitForExistence(timeout: 2), "New Person not added")
     }
 
     func testUpdatePersonName() {
-    let navigationBar = app.navigationBars["My Life"]
-    let tableView = app.tables
-    let nameTextField = tableView.textFields.firstMatch
-    let newName = "Updated Name"
+        let navigationBar = app.navigationBars["My Life"]
+        let tableView = app.tables
+        let nameTextField = tableView.textFields.firstMatch
+        let newName = "Updated Name"
 
-    // Select a person
-    tableView.staticTexts.element(boundBy: 0).tap()
+        // Select a person
+        tableView.staticTexts.element(boundBy: 0).tap()
 
-    // Tape on "Name" field and update name
-    nameTextField.tap()
-    let deleteKey = app.keys["delete"]
-    deleteKey.press(forDuration: 3)
-    nameTextField.typeText(newName)
+        // Tape on "Name" field and update name
+        nameTextField.tap()
+        let deleteKey = app.keys["delete"]
+        deleteKey.press(forDuration: 3)
+        nameTextField.typeText(newName)
 
-    // Tap on "Done" button and verify person with updated name is present
-    navigationBar.buttons["Done"].tap()
-    XCTAssertTrue(navigationBar.waitForExistence(timeout: 2), "The Home Screen has not been reached")
-    XCTAssertTrue(tableView.staticTexts[newName].waitForExistence(timeout: 2), "Name has not been updated")
+        // Tap on "Done" button and verify person with updated name is present
+        navigationBar.buttons["Done"].tap()
+        XCTAssertTrue(navigationBar.waitForExistence(timeout: 2), "The Home Screen has not been reached")
+        XCTAssertTrue(tableView.staticTexts[newName].waitForExistence(timeout: 2), "Name has not been updated")
     }
 }
