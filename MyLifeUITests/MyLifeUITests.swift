@@ -64,8 +64,8 @@ class MyLifeUITests: XCTestCase {
 
     // Tape on "Name" field and update name
     nameTextField.tap()
-    nameTextField.tap()
-    app.menuItems["Select All"].tap()
+    let deleteKey = app.keys["delete"]
+    deleteKey.press(forDuration: 3)
     nameTextField.typeText(newName)
 
     // Tap on "Done" button and verify person has been added
