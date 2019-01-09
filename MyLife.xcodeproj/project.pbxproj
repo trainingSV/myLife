@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E828D5321E6154200004E08 /* MyLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E828D5221E6154200004E08 /* MyLifeUITests.swift */; };
 		92CB601420FCC976001C4DE7 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CB601320FCC976001C4DE7 /* GlobalVariables.swift */; };
 		92E27049211C744000366A55 /* PersonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E27048211C744000366A55 /* PersonDetails.swift */; };
 		92E32A692073CE820013ACFF /* TestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E32A682073CE820013ACFF /* TestBase.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E828D5221E6154200004E08 /* MyLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyLifeUITests.swift; path = MyLifeUITests/MyLifeUITests.swift; sourceTree = SOURCE_ROOT; };
 		92BB173A206D10C700707F4E /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92BB173E206D10C800707F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92CB601320FCC976001C4DE7 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		92E32A632073CCC60013ACFF /* TestSuites */ = {
 			isa = PBXGroup;
 			children = (
+				4E828D5221E6154200004E08 /* MyLifeUITests.swift */,
 			);
 			path = TestSuites;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				92E32A812073D6810013ACFF /* AddNewPerson.swift in Sources */,
 				92E27049211C744000366A55 /* PersonDetails.swift in Sources */,
 				92E32A692073CE820013ACFF /* TestBase.swift in Sources */,
+				4E828D5321E6154200004E08 /* MyLifeUITests.swift in Sources */,
 				92E32A772073D2360013ACFF /* FrameworkConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
