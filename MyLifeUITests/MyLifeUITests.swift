@@ -24,7 +24,6 @@ class MyLifeUITests: TestBase {
         XCTAssertTrue(screens.home.isPersonDisplayed(name: newPersonName), "New Person has not been added")
     }
 
-
     func testUpdatePersonName() {
         let updatedName = "Updated User Name"
 
@@ -40,7 +39,3 @@ class MyLifeUITests: TestBase {
         XCTAssertTrue(screens.home.isPersonDisplayed(name: updatedName), "Person name has not been updated")
         }
 }
-
-
-
-
